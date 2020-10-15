@@ -11,11 +11,9 @@ int main (){
      printf("do you wanto to decode [0] or encode [1] ? "); //ask the user if they want to decode or encode
      scanf("%d", &ed);
 
-     if (ed != 1 && ed != 0){ // if the answer is not accettable I'll re ask the question untill it's right
-         do{
-             printf ("\nplease insert a valid answer [1] [0]: ");
-             scanf("%c", &ed);
-         }while (ed != 1 && ed != 0);
+    while (ed != 1 && ed != 0){ // if the answer is not accettable I'll re ask the question untill it's right
+         printf ("\nplease insert a valid answer [1] [0]: ");
+         scanf("%d", &ed);
      }
 
      printf("\ninput string: ");
